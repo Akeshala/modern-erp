@@ -3,6 +3,7 @@
 import {FunctionComponent, PropsWithChildren} from 'react';
 import {IS_DEBUG} from '@/config';
 import {LinkToPage} from '@/utils';
+import NavBar from '@/components/NavBar'
 
 /**
  * SideBar navigation items with links for Private Layout
