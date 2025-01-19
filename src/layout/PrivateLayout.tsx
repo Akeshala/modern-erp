@@ -45,7 +45,7 @@ SIDE_BAR_ITEMS.push({
 const PrivateLayout: FunctionComponent<PropsWithChildren> = ({children}) => {
     return (
         <>
-            {/*<NavBar />*/}
+            <NavBar />
             {children}
         </>
     );
