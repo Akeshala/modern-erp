@@ -2,11 +2,11 @@ import * as React from 'react';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import theme from '@/theme';
+import theme from '@/theme/theme';
 import InitColorSchemeScript from '@mui/material/InitColorSchemeScript';
 import ModeSwitch from '@/components/ModeSwitch';
 import Copyright from '@/components/Copyright';
+import CurrentLayout from "@/layout";
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
@@ -18,7 +18,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
             <ModeSwitch />
-            {props.children}
+            <CurrentLayout>{props.children}</CurrentLayout>
             <Copyright />
           </ThemeProvider>
         </AppRouterCacheProvider>

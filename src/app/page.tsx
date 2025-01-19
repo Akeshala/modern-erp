@@ -22,6 +22,7 @@ export default function Home() {
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
           Welcome to the Voice Operated Smart Notice Board
         </Typography>
+        <ProTip />
         <Link href="/about" color="secondary" component={NextLink}>
           More info
         </Link>
